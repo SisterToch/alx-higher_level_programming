@@ -13,13 +13,13 @@ if __name__ == "__main__":
     operator = str(argv[2])
 
     if operator == "+":
-        print("{} {} {} = {}".format(a, operator, b, add(a, b)))
+        print("{:d} {} {:d} = {:d}".format(a, operator, b, add(a, b)))
     elif operator == "-":
-        print("{} {} {} = {}".format(a, operator, b, sub(a, b)))
+        print("{:d} {} {:d} = {:d}".format(a, operator, b, sub(a, b)))
     elif operator == "*":
-        print("{} {} {} = {}".format(a, operator, b, mul(a, b)))
+        print("{:d} {} {:d} = {:d}".format(a, operator, b, mul(a, b)))
     elif operator == "/":
-        print("{} {} {} = {}".format(a, operator, b, div(a, b)))
+        print("{:d} {} {:d} = {:d}".format(a, operator, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
