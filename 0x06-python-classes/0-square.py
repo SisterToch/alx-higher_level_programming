@@ -3,5 +3,5 @@
 it is supposed to define a square"""
 
 class Square:
-
+"""the square is empty"""
     pass
