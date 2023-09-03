@@ -28,9 +28,27 @@ Checking int with int:
 Checking for more than three numbers:
     >>> add_integer(7, 9, 10)
     Traceback (most recent call last):
+              ...
     TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 checking for string and int:
     >>> add_integer("testy", 2)
     Traceback (most recent call last):
+              ...
     TypeError: a must be an integer
+
+Checking for only one value:
+    >>> add_integer(2)
+    100
+
+Checking for one float as value:
+    >>> add_integer(0.05)
+    0
+
+Checking for negative values:
+    >>> add_integer(-2 -2)
+    0
+
+Checking for one negative value:
+    >>> add_integer(2, -5)
+    2
