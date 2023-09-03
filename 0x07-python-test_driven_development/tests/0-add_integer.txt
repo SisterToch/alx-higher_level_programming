@@ -12,3 +12,23 @@ Importing the function from the module:
 Adding two floats:
     >>> add_integer(0.04, 0.06)
     0
+
+Checking int with float:
+    >>> add_integer(7, 7.6)
+    15
+
+Checking float with int:
+    >>> add_integer(3.06, 9)
+    12
+
+Checking int with int:
+    >>> add_integer(9, 9)
+    18
+
+Checking for more than three numbers:
+    >>> add_integer(7, 9, 10)
+    26
+
+checking for string and int:
+    >>> add_integer("testy", 2)
+    2
