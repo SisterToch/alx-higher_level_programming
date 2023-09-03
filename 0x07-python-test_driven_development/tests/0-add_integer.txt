@@ -15,7 +15,7 @@ Adding two floats:
 
 Checking int with float:
     >>> add_integer(7, 7.6)
-    15
+    14
 
 Checking float with int:
     >>> add_integer(3.06, 9)
@@ -27,8 +27,10 @@ Checking int with int:
 
 Checking for more than three numbers:
     >>> add_integer(7, 9, 10)
-    26
+    Traceback (most recent call last):
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 checking for string and int:
     >>> add_integer("testy", 2)
-    2
+    Traceback (most recent call last):
+    TypeError: a must be an integer
