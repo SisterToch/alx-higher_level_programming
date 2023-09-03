@@ -1,0 +1,14 @@
+module documentation for add.integer
+======================
+
+This module adds two floats or integer and returns their int
+
+Add integer
+-----------
+
+Importing the function from the module:
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Adding two floats:
+    >>> add_integer(0.04, 0.06)
+    0.02
