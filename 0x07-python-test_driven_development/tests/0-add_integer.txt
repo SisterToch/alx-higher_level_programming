@@ -11,4 +11,4 @@ Importing the function from the module:
 
 Adding two floats:
     >>> add_integer(0.04, 0.06)
-    0.02
+    0
