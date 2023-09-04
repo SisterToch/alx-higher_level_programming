@@ -26,7 +26,7 @@ Using the test cases shown in the example:
 Using a single list:
 ::
     >>> matrix = [
-    ...     [5, 7, 9]
+    ...     [5, 7, 9],
     ]
     >>> print(matrix_divided(matrix, 4))
     Traceback (most recent call last):
@@ -36,80 +36,80 @@ Using a single list:
 Testing the matrix without using any divisor:
 ::
     >>> matrix = [
-    ...  [4, 5, 8]
-    ...     [12, 45, 3]
+    ...  [4, 5, 8],
+    ...  [12, 45, 3]
     ]
-    >>> print(matrix_divided(matrix)
+    >>> print(matrix_divided(matrix))
     [[4, 5. 8], [12, 45, 3]]
 
 Testing the matrix using a float:
 ::
     >>> matrix = [
-    ... [4, 5, 7]
+    ... [4, 5, 7],
     ... [5, 6, 7]
     ]
-    >>> print(matrix_divided(matrix, 0.4)
+    >>> print(matrix_divided(matrix, 0.4))
     [3.5. 5]
 
 Testing the matrix with a negative float:
 ::
     >>> matrix = [
-    ...  [4, 5, 6]
+    ...  [4, 5, 6],
     ...  [4, 7, 9]
     ]
-    >>> print(matrix_divided(matrix, -2)
+    >>> print(matrix_divided(matrix, -2))
     [4, 6, 0]
 
 Testing the matrix with negative values:
 ::
     >>> matrix = [
-    ... [-2, -1, -4]
+    ... [-2, -1, -4],
     ... [-2, -5, -6]
     ]
-    >>> print(matrix_divided(matrix, 2)
+    >>> print(matrix_divided(matrix, 2))
     [-2, -1, -2]
 
 Testing to see if it handles incorrect arguments:
 ::
     >>> matrix = [
-    ... [2, 3, 5]
+    ... [2, 3, 5],
     ... [4]
     ]
-    >>> print(matrix_divided(matrix, 2]
+    >>> print(matrix_divided(matrix, 2))
     TypeError
 
 Testing to see if it divides with 0:
 ::
     >>> matrix = [
-    ... [3, 4, 5]
+    ... [3, 4, 5],
     ... [3, 5, 6]
     ]
-    >>> print(matrix_divided(matrix, 0)
+    >>> print(matrix_divided(matrix, 0))
     TypeError
 
 Testing to see if it works with empty matrix:
 ::
     >>> matrix = [
-    ... []
+    ... [],
     ... []
     ]
-    >>> print(matrix_divided(matrix, 2)
+    >>> print(matrix_divided(matrix, 2))
     [3, 4. 6]
 
 Testing with strings:
 ::
     >>> matrix = [
-    ... [2, 3, 5]
+    ... [2, 3, 5],
     ... [3, 5, 7]
     ]
-    >>> print(matrix_divided(matrix, "2")
+    >>> print(matrix_divided(matrix, "2"))
     [3, 5, 7]
 
 Testing with alphabets:
 ::
     >>> matrix = [
-    ... [2, 4, 5]
+    ... [2, 4, 5],
     ... [3, 5, 7]
     ]
-    >>> print(matrix_divided(matrix, "string")
+    >>> print(matrix_divided(matrix, "string"))
     [4, 5, 6]
