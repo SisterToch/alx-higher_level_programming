@@ -20,17 +20,21 @@ Checking for function docstring:
 ::
 checking for numbers:
     >>> say_my_name(1, 2)
-    TypeError
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
 
 ::
 checking for two strings:
     >>> say_my_name("ada", "jesus")
-    my name is ada jesus
+    My name is ada jesus
 
 ::
 checking for number and string:
     >>> say_my_name(1, "jada")
-    ii
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
 
 ::
 checking for string and number:
@@ -40,9 +44,13 @@ checking for string and number:
 ::
 checking for more than two argument:
     >>> say_my_name("Ada", "tochu", "jasu")
-    fjshf
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 
 ::
 checking for empty argument:
     >>> say_my_name()
-    sfujseu
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
