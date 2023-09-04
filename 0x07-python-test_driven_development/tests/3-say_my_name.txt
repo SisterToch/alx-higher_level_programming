@@ -39,7 +39,9 @@ checking for number and string:
 ::
 checking for string and number:
     >>> say_my_name("jada", 3)
-    isdgs
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
 
 ::
 checking for more than two argument:
