@@ -1,0 +1,48 @@
+The ``3-say_my_name`` module
+======================
+
+Using ``say_my_name``
+-------------------
+
+Importing the function from the module:
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Checking for module docstring:
+	 >>> m = __import__("3-say_my_name").__doc__
+	 >>> len(m) > 1
+	 True
+
+Checking for function docstring:
+	 >>> f = __import__("3-say_my_name").say_my_name.__doc__
+         >>> len(f) > 1
+         True
+
+::
+checking for numbers:
+    >>> say_my_name(1, 2)
+    TypeError
+
+::
+checking for two strings:
+    >>> say_my_name("ada", "jesus")
+    my name is ada jesus
+
+::
+checking for number and string:
+    >>> say_my_name(1, "jada")
+    ii
+
+::
+checking for string and number:
+    >>> say_my_name("jada", 3)
+    isdgs
+
+::
+checking for more than two argument:
+    >>> say_my_name("Ada", "tochu", "jasu")
+    fjshf
+
+::
+checking for empty argument:
+    >>> say_my_name()
+    sfujseu
