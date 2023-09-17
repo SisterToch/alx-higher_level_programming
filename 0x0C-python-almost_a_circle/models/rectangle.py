@@ -15,24 +15,24 @@ class Rectangle(Base):
         super().__init__(id)
 
     """the getter functions"""
-    @width property
+    @property
     def width(self):
         return self.__width
 
-    @height property
+    @property
     def height(self):
         return self.__height
 
-    @x property
+    @property
     def x(self):
         return self.__x
 
-    @y property
+    @property
     def y(self):
         return self.__y
 
     """the setter functions"""
- @width.setter
+    @width.setter
     def width(self, value):
         """Sets the value for width"""
         if (type(value) is not int):
