@@ -38,3 +38,15 @@ class Base:
         if json_string is None or len(json_string) == 0:
             json_string = []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """another instance"""
+        if cls.__name__ == "Rectangle":
+            dummy_instance = cls(1, 1)
+        elif cls.__name__ == "Square":
+            dummy_instance = cls(1)
+        else:
+            raise ValueError("Unsupported class")
+        dummy_instance.update(**dictionary)
+        return dummy_instance
