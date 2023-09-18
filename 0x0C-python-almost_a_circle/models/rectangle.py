@@ -99,9 +99,9 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         return {
+            "y": self.y,
+            "x": self.x,
             "id": self.id,
             "width": self.width,
-            "height": self.height,
-            "x": self.x,
-            "y": self.y
-        }
+            "height": self.height
+            }
